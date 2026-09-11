@@ -47,7 +47,6 @@
 **Record hạng 1 mô tả toàn ảnh như thế nào?**
 Record hạng 1 cho thấy model đánh giá toàn bộ ảnh `traffic` có khả năng cao nhất thuộc lớp `cab` (taxi/xe buýt nhỏ) với score 0.51. Đây là **một nhãn duy nhất cho cả ảnh**, không phân biệt từng vật thể riêng lẻ. Ảnh giao thông thực tế có nhiều loại phương tiện (xe buýt lớn, ô tô con, người đi bộ), nhưng phân loại ảnh chỉ chọn ra *một lớp* mô tả "chủ đề tổng quát" nhất — cho thấy giới hạn rõ ràng của task phân loại ảnh khi so với detection hay segmentation.
 
-**Ai định nghĩa class list?**
 Class list (1.000 lớp) được định nghĩa bởi bộ dữ liệu **ImageNet-1K**, không phải do model tự tạo ra. Checkpoint `yolo11n-cls.pt` được huấn luyện trên taxonomy này, vì vậy nó chỉ có thể dự đoán trong phạm vi 1.000 lớp ImageNet, dù ảnh có chứa vật thể ngoài danh sách đó.
 
 **Vì sao cần giữ cả `class_id`, `class_name` và `taxonomy_name`?**
