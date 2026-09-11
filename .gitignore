@@ -6,11 +6,3 @@
 __pycache__/
 .pytest_cache/
 .venv/
-classification_predictions.json/
-Classification.png/
-day1_understand_labels.ipynb/
-Detection.png/
-Segmentation.png/
-IMAGE_ATTRIBUTION.md/
-detection_predictions.json/
-segmentation_predictions.json/
